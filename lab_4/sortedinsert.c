@@ -17,10 +17,10 @@ void main(){
             break;
         }
     }
-    for(i=n-1;i<index;i--){
-        a[index]=insert;
+    for(i=n-1;i>=index;i--){
         a[i+1]=a[i];
     }
+    a[index]=insert;
     for(i=1;i<n;i++){
         printf("%d",a[i]);
     }
